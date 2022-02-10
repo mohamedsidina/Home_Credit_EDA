@@ -2,20 +2,30 @@
 Notebook containing the Exploratory Data Analysis
 
 
-## Page : Dashboard
+## Exploratory Data Analysis
 
-This page contains a dashboard that compare customer data vs client database.
+The EDA parts was done by LATHWAL, I used the first part of his [kaggle kernel](https://www.kaggle.com/codename007/home-credit-complete-eda-feature-importance)
 
-<!-- ![Application presentation](images/Page_n°3.JPG)
- -->
- 
- Many people struggle to get loans due to insufficient or non-existent credit histories. And, unfortunately, this population is often taken advantage of by untrustworthy lenders.
+![Imbalanced data](images/imbalanced_data.JPG)
 
-Home Credit Group
 
-Home Credit strives to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. In order to make sure this underserved population has a positive loan experience, Home Credit makes use of a variety of alternative data--including telco and transactional information--to predict their clients' repayment abilities.
 
-While Home Credit is currently using various statistical and machine learning methods to make these predictions, they're challenging Kagglers to help them unlock the full potential of their data. Doing so will ensure that clients capable of repayment are not rejected and that loans are given with a principal, maturity, and repayment calendar that will empower their clients to be successful.
+## Preprocess Data
+
+In this part of the notebook, we're going to handle **outliers**, **missing values** and also process data using **One Hot Encoding** for categorical data and **Robust Scaler** for numerical data.
+
+### Handling outliers
+
+- Example of **univariate outliers** detection
+![outliers](images/outliers.JPG)
+
+- Example of **imputing outliers** using **median value**
+![outliers](images/impute_outliers.JPG)
+
+### Handling missing values
+- Example of handling missing values : categorical  and boolean missing data was replaced by **mod value** and numerical missing data was replaced by **median value**
+![outliers](images/missing_values.JPG)
+
 
 ## EDA and API github links
 
